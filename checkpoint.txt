@@ -1,0 +1,35 @@
+let text = "Test taic tae jhgjhg. jgtjhg jhgjg. khkjhkjh";
+let words = 0;
+let voy = 0;
+
+function algo(str) {
+    ( Divise la chaîne en un tableau de mots en utilisant l'espace comme séparateur)
+    const textWithSplit = str.split(" ");
+
+    (Crée un tableau de caractères à partir de la chaîne)
+    const textWithChar = str.split("");
+
+    ( Boucle à travers chaque caractère de la chaîne)
+    for (let i = 0; textWithChar[i]; i++) {
+        (Vérifie si le caractère est une voyelle (e, a, o, i, u, y)
+        if (textWithChar[i] == 'e' || textWithChar[i] == 'a' || textWithChar[i] == 'o' || textWithChar[i] == 'i' || textWithChar[i] == 'u' || textWithChar[i] == 'y') {
+            (Incrémente le compteur de voyelles)
+            voy = voy + 1;
+        }
+    }
+
+    ( Met à jour la variable "words" avec la longueur du tableau de mots)
+    words = textWithSplit.length;
+
+    (Affiche le nombre de mots et le nombre de voyelles dans la console)
+    console.log("Words = ", words);
+    console.log("Voy = ", voy);
+}
+
+(Appelle la fonction algo avec la chaîne de texte "text")
+algo(text);
+
+ 
+
+
+
